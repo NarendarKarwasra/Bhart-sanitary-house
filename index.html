@@ -23,8 +23,10 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <div id="menu" onclick="show()">
-                <img src="img/menu.png" alt="menu-icon">
+            <div id="menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="logo-bsh"></a>
@@ -305,8 +307,11 @@
             <h1>Showroom</h1>
             <img src="img/Havells-Logo.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi laborum perspiciatis eum, nihil autem
-                dolorum. Ut, soluta nobis delectus unde repellat laudantium neque natus!</p>
-            <a href="#">VISIT NOW!</a>
+                dolorum. Ut, soluta nobis delectus unde repellat laudantium neque natus!
+            </p>
+
+            <a href="contact.html">VISIT NOW AT OUR LOCATION</a>
+            
         </div>
         <div class="havells-img">
             <img src="img/havells.png" alt="">
@@ -363,8 +368,32 @@
     <script>
         function show() {
             document.getElementById("nav").style.display = 'block';
+        } 
+    </script>
+
+
+
+    <script>
+        let menu = document.querySelector("#menu");
+        let nav = document.querySelector("#nav");
+
+
+        menu.onclick = function(){
+            menu.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+
+        document.onclick = function(a){
+            if (!menu.contains(a.target) && !nav.contains(a.target) ) {
+                menu.classList.remove("active");
+            nav.classList.remove("active");
+            }
         }
     </script>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
