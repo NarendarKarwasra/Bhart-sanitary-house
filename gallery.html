@@ -291,41 +291,81 @@
                 width: 90px;
             }
 
-            #menu {
-                width: 25px;
-                margin-left: 2%;
-                display: block;
-            }
-
-            #nav {
-                position: absolute;
-                top: 70px;
-                display: none;
-            }
-
-            #menu:hover #nav {
-                display: block;
-            }
-
-            #nav ul {
-                display: block;
-                text-align: left;
-            }
-
-            #nav a {
-                font-size: 23px;
-                padding: .5vh 4vw;
-                margin-right: 0px;
-            }
-
             #nav .border {
                 display: none;
             }
 
 
+            #nav {
+        width: fit-content;
+        background-color: #eff1f1;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        text-align: left;
+        padding-top: 8vh;
+        display: none;
+        left: -500px;
+        pointer-events: none;
+        transition: 0.3s;
+    }
 
+    .active#nav {
+        display: block;
+        left: 0px;
+        pointer-events: fill;
+    }
 
+    #nav ul {
+        display: block;
+    }
 
+    #nav ul li {
+        transition: 0.2s;
+    }
+
+    #nav ul li:hover {
+        background-color: #c6c6c66f;
+        border-radius: 8px;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: 2vw 10vw;
+    }
+
+    #menu {
+        display: block;
+        width: fit-content;
+        height: auto;
+        margin: 2%;
+        border-radius: 4px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: black;
+        border-radius: 50px;
+        transition: 0.2s;
+    }
+
+    .active .line1 {
+        transform: translate(0px, 8.5px)rotate(45deg);
+    }
+
+    .active .line2 {
+        opacity: 0;
+    }
+
+    .active .line3 {
+        transform: translate(0px, -8.5px)rotate(-45deg);
+    }
 
             .foot {
                 width: 80%;
@@ -390,6 +430,68 @@
 
         }
 
+
+
+
+        @media (max-width:400px) {
+
+#nav {
+    padding-top: 6vh;
+}
+
+#nav ul li a {
+    padding: 2vw 10vw;
+}
+
+#menu {
+    margin: 1%;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 20px;
+    height: 2px;
+    margin: 4px;
+}
+
+.active .line1 {
+    transform: translate(0px, 6.3px)rotate(45deg);
+}
+
+.active .line3 {
+    transform: translate(0px, -6.3px)rotate(-45deg);
+}
+
+
+
+
+
+
+}
+
+@media (max-width:300px) {
+
+.page1 {
+    padding-top: 30%;
+}
+
+#nav {
+    padding-top: 6vh;
+}
+
+#nav ul li a {
+    padding: 1.5vw 10vw;
+}
+
+#menu {
+    margin: 1%;
+}
+
+
+
+}
+
     </style>
 
 </head>
@@ -397,8 +499,10 @@
 <body>
     <div class="header">
         <div class="navbar">
-            <div id="menu" onclick="show()">
-                <img src="img/menu.png" alt="menu-icon">
+            <div id="menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="logo-bsh"></a>
@@ -465,6 +569,23 @@
     </div>
 
 
+    <script>
+        let menu = document.querySelector("#menu");
+        let nav = document.querySelector("#nav");
+
+
+        menu.onclick = function(){
+            menu.classList.toggle("active");
+            nav.classList.toggle("active");
+        }
+
+        document.onclick = function(a){
+            if (!menu.contains(a.target) && !nav.contains(a.target) ) {
+                menu.classList.remove("active");
+            nav.classList.remove("active");
+            }
+        }
+    </script>
 
 
 </body>
