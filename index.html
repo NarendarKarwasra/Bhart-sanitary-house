@@ -49,15 +49,15 @@
 
     <div class="page1">
         <div class="home">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <img src="img/slide1.jpg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="img/slide2.jpg" class="d-block" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="img/slide3.jpg" class="d-block" alt="...">
                     </div>
                     <div class="carousel-item">
@@ -311,7 +311,7 @@
             </p>
 
             <a href="contact.html">VISIT NOW AT OUR LOCATION</a>
-            
+
         </div>
         <div class="havells-img">
             <img src="img/havells.png" alt="">
@@ -378,15 +378,15 @@
         let nav = document.querySelector("#nav");
 
 
-        menu.onclick = function(){
+        menu.onclick = function () {
             menu.classList.toggle("active");
             nav.classList.toggle("active");
         }
 
-        document.onclick = function(a){
-            if (!menu.contains(a.target) && !nav.contains(a.target) ) {
+        document.onclick = function (a) {
+            if (!menu.contains(a.target) && !nav.contains(a.target)) {
                 menu.classList.remove("active");
-            nav.classList.remove("active");
+                nav.classList.remove("active");
             }
         }
     </script>
@@ -396,7 +396,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script>
+        const carouselElements = document.querySelectorAll('[data-bs-ride="false"]');
+        carouselElements.forEach((element) => {
+            const carousel = bootstrap.Carousel.getOrCreateInstance(element);
+            carousel.pause();
+        });
+    </script>
 
 
 </body>
