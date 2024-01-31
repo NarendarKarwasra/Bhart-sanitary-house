@@ -343,11 +343,18 @@ body {
     width: 100%;
     background-color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .vid #video1 {
     width: 90%;
     border-radius: 20px;
+}
+
+.under600{
+    display: none;
 }
 
 
@@ -982,6 +989,13 @@ body {
 
     .vid {
         padding-bottom: 5%;
+    }
+
+    .over600{
+        display: none;
+    }
+    .under600{
+        display: block;
     }
 
     .quality {
