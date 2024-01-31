@@ -49,21 +49,12 @@
 
     <div class="page1">
         <div class="home">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="img/slide1.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/slide2.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item active">
-                        <img src="img/slide3.jpg" class="d-block" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/slide4.jpg" class="d-block" alt="...">
-                    </div>
-                </div>
+            <div class="slider">
+                <img src="img/slide1.jpg" alt="">
+                <img src="img/slide2.jpg" alt="">
+                <img src="img/slide3.jpg" alt="">
+                <img src="img/slide4.jpg" alt="">
+                <img src="img/slide1.jpg" alt="">
             </div>
         </div>
 
@@ -244,7 +235,7 @@
 
 
     <div class="vid">
-        <video id="video1" autoplay loop muted height="100%" width="100%">
+        <video id="video1" autoplay loop muted >
             <source src="img/vid.mp4" type="video/mp4">
         </video>
     </div>
@@ -389,17 +380,6 @@
                 nav.classList.remove("active");
             }
         }
-    </script>
-
-
-<script>
-    var vid = document.getElementById("video1");
-    vid.playbackRate = 1.5;
-    </script>
-    <script>
-    var mobilevideo = document.getElementsById("bg-vid", "video1")[0];
-    mobilevideo.setAttribute("playsinline", "");
-    mobilevideo.setAttribute("muted", "");
     </script>
 
 
