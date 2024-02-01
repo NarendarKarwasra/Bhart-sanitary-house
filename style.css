@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -104,11 +105,17 @@ body {
 
 .search {
     width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     margin-right: 2%;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
 }
 
 .search-btn,
@@ -119,6 +126,8 @@ body {
     background-color: white;
     cursor: pointer;
     position: absolute;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
@@ -136,12 +145,16 @@ body {
     width: 0px;
     padding: 8px;
     border-radius: 25px;
+    -webkit-transition: width 0.25s ease;
+    -o-transition: width 0.25s ease;
     transition: width 0.25s ease;
 }
 
 .active {
     width: 250px;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 }
 
 .active .search-box {
@@ -151,7 +164,9 @@ body {
 }
 
 .active .search-btn {
-    transform: translate(175px) scale(0.8);
+    -webkit-transform: translate(175px) scale(0.8);
+        -ms-transform: translate(175px) scale(0.8);
+            transform: translate(175px) scale(0.8);
     background-color: transparent;
     padding: 2%;
 }
@@ -159,7 +174,9 @@ body {
 .active .close-btn {
     z-index: 0;
     padding: 3%;
-    transform: translate(220px);
+    -webkit-transform: translate(220px);
+        -ms-transform: translate(220px);
+            transform: translate(220px);
     background-color: transparent;
 }
 
@@ -616,8 +633,8 @@ body {
 .switch {
     width: 100%;
     padding: 10%;
-    background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgb(0, 0, 0, 0)));
     background-image: -o-linear-gradient(left, white, rgb(0, 0, 0, 0));
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(rgb(0, 0, 0, 0)));
     background-image: linear-gradient(to right, white, rgb(0, 0, 0, 0));
 }
 
@@ -971,13 +988,17 @@ body {
     }
 
     .active .search-btn {
-        transform: translate(140px) scale(0.8);
+        -webkit-transform: translate(140px) scale(0.8);
+            -ms-transform: translate(140px) scale(0.8);
+                transform: translate(140px) scale(0.8);
         padding: 4%;
     }
 
     .active .close-btn {
         padding: 3.5%;
-        transform: translate(180px);
+        -webkit-transform: translate(180px);
+            -ms-transform: translate(180px);
+                transform: translate(180px);
     }
 
     .home-cont a {
@@ -1221,11 +1242,15 @@ body {
     }
 
     .active .search-btn {
-        transform: translate(82px) scale(0.6);
+        -webkit-transform: translate(82px) scale(0.6);
+            -ms-transform: translate(82px) scale(0.6);
+                transform: translate(82px) scale(0.6);
     }
 
     .active .close-btn {
-        transform: translate(115px) scale(0.7);
+        -webkit-transform: translate(115px) scale(0.7);
+            -ms-transform: translate(115px) scale(0.7);
+                transform: translate(115px) scale(0.7);
     }
 
     .home-cont a {
@@ -1534,11 +1559,15 @@ body {
     }
 
     .active .search-btn {
-        transform: translate(55px) scale(0.5);
+        -webkit-transform: translate(55px) scale(0.5);
+            -ms-transform: translate(55px) scale(0.5);
+                transform: translate(55px) scale(0.5);
     }
 
     .active .close-btn {
-        transform: translate(80px) scale(0.5);
+        -webkit-transform: translate(80px) scale(0.5);
+            -ms-transform: translate(80px) scale(0.5);
+                transform: translate(80px) scale(0.5);
     }
 
     #nav {
@@ -1615,10 +1644,14 @@ body {
     }
 
     .active .search-btn {
-        transform: translate(43px) scale(0.45);
+        -webkit-transform: translate(43px) scale(0.45);
+            -ms-transform: translate(43px) scale(0.45);
+                transform: translate(43px) scale(0.45);
     }
 
     .active .close-btn {
-        transform: translate(63px) scale(0.4);
+        -webkit-transform: translate(63px) scale(0.4);
+            -ms-transform: translate(63px) scale(0.4);
+                transform: translate(63px) scale(0.4);
     }
 }
