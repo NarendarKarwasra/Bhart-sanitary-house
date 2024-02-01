@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -109,13 +108,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     margin-right: 2%;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -ms-flex-pack: end;
+    justify-content: end;
 }
 
 .search-btn,
@@ -153,8 +152,8 @@ body {
 .active {
     width: 250px;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
 }
 
 .active .search-box {
@@ -165,8 +164,8 @@ body {
 
 .active .search-btn {
     -webkit-transform: translate(175px) scale(0.8);
-        -ms-transform: translate(175px) scale(0.8);
-            transform: translate(175px) scale(0.8);
+    -ms-transform: translate(175px) scale(0.8);
+    transform: translate(175px) scale(0.8);
     background-color: transparent;
     padding: 2%;
 }
@@ -175,8 +174,8 @@ body {
     z-index: 0;
     padding: 3%;
     -webkit-transform: translate(220px);
-        -ms-transform: translate(220px);
-            transform: translate(220px);
+    -ms-transform: translate(220px);
+    transform: translate(220px);
     background-color: transparent;
 }
 
@@ -989,16 +988,16 @@ body {
 
     .active .search-btn {
         -webkit-transform: translate(140px) scale(0.8);
-            -ms-transform: translate(140px) scale(0.8);
-                transform: translate(140px) scale(0.8);
+        -ms-transform: translate(140px) scale(0.8);
+        transform: translate(140px) scale(0.8);
         padding: 4%;
     }
 
     .active .close-btn {
         padding: 3.5%;
         -webkit-transform: translate(180px);
-            -ms-transform: translate(180px);
-                transform: translate(180px);
+        -ms-transform: translate(180px);
+        transform: translate(180px);
     }
 
     .home-cont a {
@@ -1170,13 +1169,6 @@ body {
 
 @media (max-width:600px) {
 
-    .page1 {
-        padding-top: 20%;
-    }
-
-    .home-cont h1 {
-        font-size: 6vw;
-    }
 
     .logo {
         margin-left: 15%;
@@ -1243,14 +1235,22 @@ body {
 
     .active .search-btn {
         -webkit-transform: translate(82px) scale(0.6);
-            -ms-transform: translate(82px) scale(0.6);
-                transform: translate(82px) scale(0.6);
+        -ms-transform: translate(82px) scale(0.6);
+        transform: translate(82px) scale(0.6);
     }
 
     .active .close-btn {
         -webkit-transform: translate(115px) scale(0.7);
-            -ms-transform: translate(115px) scale(0.7);
-                transform: translate(115px) scale(0.7);
+        -ms-transform: translate(115px) scale(0.7);
+        transform: translate(115px) scale(0.7);
+    }
+
+    .page1 {
+        padding-top: 20%;
+    }
+
+    .home-cont h1 {
+        font-size: 6vw;
     }
 
     .home-cont a {
@@ -1515,9 +1515,6 @@ body {
 
 @media (max-width:400px) {
 
-    .page1 {
-        padding-top: 25%;
-    }
 
     .logo {
         margin-left: 25%;
@@ -1560,14 +1557,14 @@ body {
 
     .active .search-btn {
         -webkit-transform: translate(55px) scale(0.5);
-            -ms-transform: translate(55px) scale(0.5);
-                transform: translate(55px) scale(0.5);
+        -ms-transform: translate(55px) scale(0.5);
+        transform: translate(55px) scale(0.5);
     }
 
     .active .close-btn {
         -webkit-transform: translate(80px) scale(0.5);
-            -ms-transform: translate(80px) scale(0.5);
-                transform: translate(80px) scale(0.5);
+        -ms-transform: translate(80px) scale(0.5);
+        transform: translate(80px) scale(0.5);
     }
 
     #nav {
@@ -1600,6 +1597,10 @@ body {
         -webkit-transform: translate(0px, -6.3px)rotate(-45deg);
         -ms-transform: translate(0px, -6.3px)rotate(-45deg);
         transform: translate(0px, -6.3px)rotate(-45deg);
+    }
+
+    .page1 {
+        padding-top: 25%;
     }
 }
 
@@ -1645,13 +1646,13 @@ body {
 
     .active .search-btn {
         -webkit-transform: translate(43px) scale(0.45);
-            -ms-transform: translate(43px) scale(0.45);
-                transform: translate(43px) scale(0.45);
+        -ms-transform: translate(43px) scale(0.45);
+        transform: translate(43px) scale(0.45);
     }
 
     .active .close-btn {
         -webkit-transform: translate(63px) scale(0.4);
-            -ms-transform: translate(63px) scale(0.4);
-                transform: translate(63px) scale(0.4);
+        -ms-transform: translate(63px) scale(0.4);
+        transform: translate(63px) scale(0.4);
     }
 }
