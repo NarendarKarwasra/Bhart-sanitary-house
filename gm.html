@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Gallery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -188,76 +188,66 @@
 
 
 
-        .content {
+
+
+        .item-container {
             width: 100%;
-            padding: 10%;
-            padding-top: 20%;
+            padding: 0% 5% 10% 5%;
+            background-color: white;
+            text-align: center;
         }
 
-        .content h1 {
-            font-weight: 900;
+        .item-container>img {
+            padding-top: 15%;
+            width: 25%;
             padding-bottom: 3%;
         }
 
-        .content p {
-            font-size: 1.3vw;
-            padding-bottom: 5%;
-        }
-
-        .content img {
-            width: 100%;
-            padding-bottom: 5%;
-        }
-
-
-        .team {
-            padding: 0 10%;
-            text-align: center;
-            padding-bottom: 5%;
-        }
-
-        .team h1 {
-            font-weight: 900;
-            padding-bottom: 5%;
-        }
-
-        .member-all {
+        .item-all {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
         }
 
-        .member {
+        .item {
             width: 24%;
             border: 1px solid lightgray;
+            margin-bottom: 3%;
         }
 
-        .member-img {
+        .item-img {
             border: 1px solid lightgray;
             padding-bottom: 20%;
         }
 
-        .member-img img {
+        .item-img img {
             width: 100%;
             padding: 20%;
             padding-left: 5%;
         }
 
-        .member-cont {
+        .item-cont {
             padding: 5% 0;
         }
 
-        .member-cont h5 {
+        .item-cont h5 {
             margin-top: 3%;
-            font-size: 1.5vw;
+            font-size: 1.4vw;
+            font-weight: 400;
         }
 
-        .member-cont h5:last-child {
+        .item-cont h5:last-child {
             font-weight: 900;
         }
+
+
+
+
 
         .footer {
             width: 100%;
@@ -374,6 +364,7 @@
             font-size: 1.3vw;
             font-weight: 400;
         }
+
 
 
 
@@ -518,42 +509,34 @@
                 transform: translate(180px);
             }
 
-            .content {
-                padding-top: 25%;
-            }
 
-            .content h1 {
-                font-size: 4vw;
-            }
-
-            .content p {
-                font-size: 2vw;
-            }
-
-            .member-container>img {
+            .item-container>img {
+                padding-top: 20%;
                 width: 35%;
                 padding-bottom: 5%;
             }
 
-            .member-all {
+            .item-all {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
                 -ms-flex-pack: distribute;
                 justify-content: space-around;
             }
 
-            .member {
+            .item {
                 width: 40%;
                 margin-bottom: 5%;
             }
 
-            .member-img img {
+            .item-img img {
                 padding-left: 5%;
             }
 
-            .member-cont h5 {
-                font-size: 2.5vw;
+            .item-cont h5 {
+                font-size: 2.2vw;
             }
+
+
 
             .foot-1 {
                 border-bottom: none;
@@ -617,6 +600,8 @@
             }
 
         }
+
+
 
 
 
@@ -703,44 +688,32 @@
                 transform: translate(115px) scale(0.7);
             }
 
-            .content {
+
+            .item-container>img {
                 padding-top: 30%;
-            }
-
-            .content h1 {
-                font-size: 6vw;
-            }
-
-            .content p {
-                font-size: 3.8vw;
-            }
-
-            .team h1 {
-                font-size: 6vw;
-            }
-
-            .member-container>img {
                 width: 40%;
                 padding-bottom: 5%;
             }
 
-            .member {
+            .item {
                 width: 45%;
             }
 
-            .member-cont {
+            .item-cont {
                 padding: 5%;
             }
 
-            .member-img img {
+            .item-img img {
                 padding: 10%;
                 padding-left: 0;
             }
 
-            .member-cont h5 {
+            .item-cont h5 {
                 margin-top: 3%;
                 font-size: 3.5vw;
             }
+
+
 
 
             .foot {
@@ -830,6 +803,10 @@
         }
 
 
+
+
+
+
         @media (max-width:400px) {
 
             .logo {
@@ -897,7 +874,6 @@
             }
 
 
-
             #menu {
                 margin: 1%;
             }
@@ -921,7 +897,6 @@
                 -ms-transform: translate(0px, -6.3px)rotate(-45deg);
                 transform: translate(0px, -6.3px)rotate(-45deg);
             }
-
 
             .box h3 {
                 padding-bottom: 5%;
@@ -955,15 +930,14 @@
                 font-size: 3.5vw;
             }
 
-
         }
 
 
 
 
 
-        @media (max-width:300px) {
 
+        @media (max-width:300px) {
             .logo {
                 margin-left: 20%;
             }
@@ -1036,67 +1010,165 @@
                 <button class="close-btn"><img src="img/close.png" alt="close-icon"></button>
             </div>
         </div>
+
     </div>
 
-    <div class="content">
-        <h1>History Of Our Shop</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis aspernatur officiis totam
-            necessitatibus ipsam vel. Quibusdam suscipit pariatur veniam. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Vero, doloribus!</p>
-        <img src="img/about-img.jpg" alt="">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ex eveniet expedita quas, suscipit consectetur
-            nulla atque pariatur vero ut ducimus, a maiores repellat ipsam porro rerum ullam! Dolor, iste quasi, nulla
-            voluptates ab vitae nemo quas consectetur provident fugiat at nostrum, tempora est adipisci atque qui
-            quisquam? Ut explicabo asperiores consequuntur optio nostrum, veritatis, accusantium harum a in beatae
-            blanditiis accusamus saepe quas possimus soluta! Mollitia commodi voluptate fugit.</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia tempora ipsam repellat! Explicabo illum
-            reiciendis cumque consectetur et minus quibusdam quam minima! Consequatur dicta fugiat nam dignissimos est
-            voluptatibus commodi quos asperiores reprehenderit harum unde, nobis cupiditate aut enim eaque, numquam
-            illum maiores saepe ex laboriosam vel laborum! Debitis, expedita.</p>
-    </div>
 
-    <div class="team">
-        <h1>Meet Our Team</h1>
-        <div class="member-all">
-            <div class="member">
-                <div class="member-img">
+
+    <div class="item-container">
+        <img src="img/gm.png" alt="">
+        <div class="item-all">
+            <div class="item">
+                <div class="item-img">
                     <img src="img/logo.png" alt="">
                 </div>
-                <div class="member-cont">
-                    <h5>Name</h5>
-                    <h5>(Post)</h5>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
                 </div>
             </div>
-            <div class="member">
-                <div class="member-img">
+            <div class="item">
+                <div class="item-img">
                     <img src="img/logo.png" alt="">
                 </div>
-                <div class="member-cont">
-                    <h5>Name</h5>
-                    <h5>(Post)</h5>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
                 </div>
             </div>
-            <div class="member">
-                <div class="member-img">
+            <div class="item">
+                <div class="item-img">
                     <img src="img/logo.png" alt="">
                 </div>
-                <div class="member-cont">
-                    <h5>Name</h5>
-                    <h5>(Post)</h5>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
                 </div>
             </div>
-            <div class="member">
-                <div class="member-img">
+            <div class="item">
+                <div class="item-img">
                     <img src="img/logo.png" alt="">
                 </div>
-                <div class="member-cont">
-                    <h5>Name</h5>
-                    <h5>(Post)</h5>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="item-cont">
+                    <h5>GM Switch</h5>
+                    <h5>&#8377 500</h5>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
 
     <div class="footer">
         <div class="foot">
@@ -1149,7 +1221,6 @@
     </div>
 
 
-
     <script>
         let menu = document.querySelector("#menu");
         let nav = document.querySelector("#nav");
@@ -1191,8 +1262,6 @@
             searchBox.value = '';
         })
     </script>
-
-
 
 
 
