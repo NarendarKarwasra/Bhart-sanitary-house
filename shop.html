@@ -336,6 +336,17 @@
             flex-direction: column;
         }
 
+        .box1-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .box1-right {
+            margin-left: 5%;
+        }
+
+
         .foot-end {
             width: 100%;
             background-color: #1b1b1b;
@@ -575,6 +586,11 @@
                 padding-bottom: 5%;
             }
 
+            .box1-right {
+                margin-left: 5%;
+                text-align: left;
+            }
+
             .foot-end {
                 padding: 2%;
             }
@@ -604,8 +620,10 @@
             }
 
             #nav ul li a {
-                padding: 0.8vw 5vw;
+                padding: 0.8vw 8vw;
+                font-size: 4.5vw;
             }
+
 
             .line1,
             .line2,
@@ -697,6 +715,7 @@
 
 
 
+
             .foot {
                 width: 80%;
                 margin: auto;
@@ -738,11 +757,10 @@
             .box h3 {
                 padding-bottom: 5%;
                 padding-top: 10%;
-                font-size: 6vw;
             }
 
             .box p {
-                font-size: 3.5vw;
+                font-size: 3.8vw;
             }
 
             .foot #foot-address {
@@ -751,7 +769,7 @@
             }
 
             .box a {
-                font-size: 3.5vw;
+                font-size: 3.8vw;
                 margin-top: 0%;
             }
 
@@ -759,6 +777,16 @@
             .box3 h3,
             .box4 h3 {
                 padding-bottom: 5%;
+            }
+
+            .box1-container {
+                text-align: left;
+                position: absolute;
+                left: 15%;
+            }
+
+            .box2 {
+                padding-top: 15%;
             }
 
             .foot-end {
@@ -770,6 +798,7 @@
             .foot-end h6 {
                 font-size: 3vw;
             }
+
 
         }
 
@@ -786,6 +815,15 @@
 
             .logo img {
                 width: 70px;
+            }
+
+            #nav a {
+                padding: 0vw 5vw;
+            }
+
+            #nav ul li a {
+                padding: 1vw 10vw;
+                font-size: 5vw;
             }
 
             .search {
@@ -835,9 +873,6 @@
                 padding-top: 6vh;
             }
 
-            #nav ul li a {
-                padding: 1.5vw 10vw;
-            }
 
             #menu {
                 margin: 1%;
@@ -863,7 +898,44 @@
                 transform: translate(0px, -6.3px)rotate(-45deg);
             }
 
+            .box h3 {
+                padding-bottom: 5%;
+                padding-top: 10%;
+                font-size: 6vw;
+            }
+
+            .box p {
+                font-size: 4.2vw;
+            }
+
+            .box a {
+                font-size: 4.2vw;
+            }
+
+            .box2 h3,
+            .box3 h3,
+            .box4 h3 {
+                padding-bottom: 5%;
+            }
+
+            .box1-container {
+                left: 10%;
+            }
+
+            .box2 {
+                padding-top: 30%;
+            }
+
+            .foot-end h6 {
+                font-size: 3.5vw;
+            }
+
         }
+
+
+
+
+
 
         @media (max-width:300px) {
             .logo {
@@ -1191,9 +1263,18 @@
                     <h3>Contact Info</h3>
                     <p id="foot-address">Near B.S.N.L. Exchanges, <br>ward No.2, Nohar(Raj.) 335523</p>
 
-                    <p>Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 99299-39314</p>
-                    <p>E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bharatsanitaryhouse_bsh@gmail.com</p>
-                    <p>Website: &nbsp;&nbsp; https://bsh.com</p>
+                    <div class="box1-container">
+                        <div class="box1-left">
+                            <p>Phone:</p>
+                            <p>E-mail:</p>
+                            <p>Website:</p>
+                        </div>
+                        <div class="box1-right">
+                            <p>99299-39314</p>
+                            <p>bharatsanitaryhouse_bsh@gmail.com</p>
+                            <p>https://bsh.com</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="box box2">
                     <h3>My Products</h3>

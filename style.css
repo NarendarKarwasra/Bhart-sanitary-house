@@ -831,6 +831,16 @@ body {
     flex-direction: column;
 }
 
+.box1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.box1-right {
+    margin-left: 5%;
+}
+
 .foot-end {
     width: 100%;
     background-color: #1b1b1b;
@@ -1106,13 +1116,17 @@ body {
         width: 100%;
     }
 
-
     .foot-1 {
         border-bottom: none;
     }
 
     .foot-1 img {
         width: 15%;
+    }
+
+    .box1-right {
+        margin-left: 5%;
+        text-align: left;
     }
 
     .foot-2 {
@@ -1179,8 +1193,10 @@ body {
     }
 
     #nav ul li a {
-        padding: 0.8vw 5vw;
+        padding: 0.8vw 8vw;
+        font-size: 4.5vw;
     }
+
 
     .line1,
     .line2,
@@ -1276,11 +1292,11 @@ body {
     }
 
     .acces h5 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .acces p {
-        font-size: 3vw;
+        font-size: 3.8vw;
     }
 
 
@@ -1316,7 +1332,7 @@ body {
 
     .brand-content p {
         padding: 5% 10%;
-        font-size: 3vw;
+        font-size: 3.8vw;
     }
 
     .brand-content h5 {
@@ -1360,7 +1376,7 @@ body {
 
     .item-cont h5 {
         margin-top: 3%;
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
 
 
@@ -1388,7 +1404,7 @@ body {
     }
 
     .qual h5 {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
 
     .qual-img {
@@ -1423,7 +1439,7 @@ body {
     }
 
     .havells-cont p {
-        font-size: 3vw;
+        font-size: 3.8vw;
     }
 
     .havells-cont a {
@@ -1475,7 +1491,7 @@ body {
     }
 
     .box p {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
 
     .foot #foot-address {
@@ -1484,7 +1500,7 @@ body {
     }
 
     .box a {
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         margin-top: 0%;
     }
 
@@ -1492,6 +1508,16 @@ body {
     .box3 h3,
     .box4 h3 {
         padding-bottom: 5%;
+    }
+
+    .box1-container {
+        text-align: left;
+        position: absolute;
+        left: 15%;
+    }
+
+    .box2 {
+        padding-top: 15%;
     }
 
     .foot-end {
@@ -1523,6 +1549,16 @@ body {
     .logo img {
         width: 70px;
     }
+
+    #nav a {
+        padding: 0vw 5vw;
+    }
+
+    #nav ul li a {
+        padding: 1vw 10vw;
+        font-size: 5vw;
+    }
+
 
     .search {
         width: 110px;
@@ -1571,9 +1607,6 @@ body {
         padding-top: 6vh;
     }
 
-    #nav ul li a {
-        padding: 1.5vw 10vw;
-    }
 
     #menu {
         margin: 1%;
@@ -1602,6 +1635,87 @@ body {
     .page1 {
         padding-top: 25%;
     }
+
+    .acces h5 {
+        font-size: 5.8vw;
+    }
+
+    .acces p {
+        font-size: 4.2vw;
+    }
+
+    .brand-content p {
+        font-size: 4.2vw;
+    }
+
+    .brand-content h5 {
+        font-size: 6vw;
+    }
+
+    .item-cont h5 {
+        font-size: 4vw;
+    }
+
+    .qual h5 {
+        font-size: 4.5vw;
+    }
+
+    .switch h3 {
+        font-size: 4vw;
+    }
+
+    .switch h1 {
+        font-size: 8vw;
+    }
+
+    .switch h5 {
+        font-size: 4vw;
+    }
+
+    .switch a {
+        font-size: 3.5vw;
+    }
+
+    .havells-cont p {
+        font-size: 4.2vw;
+    }
+
+    .havells-cont a {
+        font-size: 3.5vw;
+    }
+
+    .box h3 {
+        padding-bottom: 5%;
+        padding-top: 10%;
+        font-size: 6vw;
+    }
+
+    .box p {
+        font-size: 4.2vw;
+    }
+
+    .box a {
+        font-size: 4.2vw;
+    }
+
+    .box2 h3,
+    .box3 h3,
+    .box4 h3 {
+        padding-bottom: 5%;
+    }
+
+    .box1-container {
+        left: 10%;
+    }
+
+    .box2 {
+        padding-top: 30%;
+    }
+
+    .foot-end h6 {
+        font-size: 3.5vw;
+    }
+
 }
 
 
@@ -1655,4 +1769,5 @@ body {
         -ms-transform: translate(63px) scale(0.4);
         transform: translate(63px) scale(0.4);
     }
+
 }
